@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 app.set("view engine", "ejs");
-app.set("views", "./src/views");
+app.set("views", "dist/views");
 
 app.use(authRoutes);
 app.use(pageRoutes);
