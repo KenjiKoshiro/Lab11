@@ -49,7 +49,7 @@ app.set("trust proxy", 1);
 app.use(express_1.default.urlencoded({ extended: true }));
 app.use((0, cookie_parser_1.default)());
 app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "views"));
+app.set("views", path.join(process.cwd(), "src/views"));
 app.use(authRoutes_1.default);
 app.use(pageRoutes_1.default);
 const PORT = Number(process.env.PORT || 3000);
